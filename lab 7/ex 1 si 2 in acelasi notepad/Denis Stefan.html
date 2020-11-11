@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pagina de prezentare 
+        </title>
+        <link rel="stylesheet" href="Style.css">
+        <script>
+            function viitor(){
+                document.getElementById("Nume").innerHTML = "Dr. Ing. Stefan Denis";
+                document.getElementById("poza").src = "eu2.jpg";
+                document.getElementById("poza").style.width = " 300px";
+                document.getElementById("poza").style.opacity = "50%";
+                document.getElementById("poza").style.border = "10px";
+                document.body.style.backgroundColor = " Blue";
+                document.getElementById("div").style.backgroundColor = " Blue";
+                document.getElementById("p").style.fontFamily = "Lucida Console, Courier, monospace";
+                
+                var tabel = document.getElementById("tabel");
+                tabel.rows[0].cells[0].innerHTML = "OSUT Cluj";
+                tabel.rows[0].cells[1].innerHTML = " Departamentul financiar";
+                tabel.rows[2].cells[1].innerHTML = "UTCN";
+                tabel.rows[2].cells[1].innerHTML = "Comunicare ";
+                tabel.rows[3].cells[0].innerHTML = "Work and Travel USA";
+                tabel.rows[3].cells[1].innerHTML = " Anul II"; 
+        
+            }
+
+            function Varsta(){
+                    var azi = new Date;
+                    var varstainani;
+
+                    var anNastere = document.getElementById("ani").innerHTML;
+                    var ancurent = azi.getFullYear();
+
+                    varstainani = ancurent - anNastere;
+
+                    document.getElementById("ani").innerHTML = varstainani;
+
+            }
+            </script>
+
+
+        
+    </head>
+    
+    <body>
+        <div id="div">
+
+        
+           <h2 id="Nume">Stefan Denis Iulian</h2>
+
+             <p onmouseover="Varsta" id="ani" >2001</p>
+        
+       
+        <img id="poza" src="eu.jpg">
+        <p>
+            <b>Data nașterii: </b> 11/05/2001
+        </p>
+
+        
+        <p id="p">
+            <b>Adresa de email: </b>  denisstefan2001@yahoo.com
+        </p>
+        <p id="p">
+            <b>Număr de telefon: </b>  0761xxxxxx
+        </p>
+        
+        <p id="p">
+            
+           <b id="p" >Citat:</b> Educatia este cea care trebuie sa ne uneasca
+        </p>
+
+        <table id="tabel">
+            <tr>
+                <td>
+                     Fizica I
+                </td>
+                <td>
+                   <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/03.pdf">link fisa disciplina</a>
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td>
+                    Informatica aplicata
+                </td>
+                <td>
+                    <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/06.pdf">link fisa disciplina</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                       Componente si circuite electronice pasive
+                </td>
+                <td>
+                   <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf">link fisa disciplina</a>
+                </td>
+                
+
+            </tr>
+
+
+        </table>
+
+        <ul>
+           
+                <h4>
+                    Hobby-uri
+                </h4>
+            
+            <li>
+                Fotbal
+            </li>
+            <li>
+                Seriale
+            </li>
+            <li>
+                Gaming
+            </li>
+        </ul>
+
+    </div>
+    <br>
+    
+        <button type="button" onclick="viitor()">
+            Vezi Viitor
+        </button>
+   
+   
+    
+    </body>
+
+</html>
